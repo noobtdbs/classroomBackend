@@ -92,7 +92,6 @@ router.post('/ComplainCreate', complainCreate);
 router.get('/ComplainList/:id', complainList);
 
 // Sclass
-
 router.post('/SclassCreate', sclassCreate);
 
 router.get('/SclassList/:id', sclassList);
