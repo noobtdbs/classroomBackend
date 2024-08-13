@@ -49,11 +49,7 @@ dotenv.config();
 app.use(express.json({ limit: '10mb' }));
 
 // CORS configuration
-app.use(cors({
-    origin:[ 'https://classroom-lvdves9d4-tridibesh-misras-projects.vercel.app', 'http://localhost:3000'], // Replace with your frontend's URL
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-}));
+app.use(cors());
 
 mongoose
     .connect(process.env.MONGO_URL, {
