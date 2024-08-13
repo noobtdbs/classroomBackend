@@ -50,7 +50,7 @@ app.use(express.json({ limit: '10mb' }));
 
 // CORS configuration
 app.use(cors({
-    origin: 'https://classroom-lvdves9d4-tridibesh-misras-projects.vercel.app', // Replace with your frontend's URL
+    origin:[ 'https://classroom-lvdves9d4-tridibesh-misras-projects.vercel.app', 'http://localhost:3000'], // Replace with your frontend's URL
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
